@@ -4,3 +4,10 @@
   padding: 15px;
   font-size: 1.5em;
 }
+
+.profileContainer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+}
