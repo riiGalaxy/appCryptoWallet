@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { UserProviderWrapper } from "./context/user.context";
 //pages
 import { Home } from "./page/Home/Home";
@@ -19,7 +19,7 @@ import "./themes/base.css";
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <HashRouter>
         <UserProviderWrapper>
           <Topbar />
           <Routes>
@@ -35,7 +35,7 @@ function App() {
           </Routes>
           <Navigation />
         </UserProviderWrapper>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
