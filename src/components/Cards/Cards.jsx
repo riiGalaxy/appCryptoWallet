@@ -16,13 +16,25 @@ const Cards = ({ coins }) => {
                   <Image
                     src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${coin.id}.png`}
                   />
-                  <Space wrap>
-                    <p>{coin.quote.USD.percent_change_24h.toFixed(2)}%</p>
+                  <Space className="container-card" wrap>
+                    <p
+                      className={
+                        coin.quote.USD.percent_change_24h > 0 ? "green" : "red"
+                      }
+                    >
+                      {coin.quote.USD.percent_change_24h.toFixed(2)}%
+                    </p>
                   </Space>
                 </Grid.Item>
                 <div>
                   <h4>{coin.name}</h4>
-                  <h3>{coin.quote.USD.price.toFixed(2)} $</h3>
+                  <h3
+                    className={
+                      coin.quote.USD.percent_change_24h > 0 ? "green" : "red"
+                    }
+                  >
+                    {coin.quote.USD.price.toFixed(2)} $
+                  </h3>
                 </div>
               </Grid>
             </Card>

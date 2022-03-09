@@ -1,18 +1,25 @@
 .container-card img {
   width: 30px;
   background-color: #292c32;
-  color: #c92525;
+  /* color: #c92525; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.homeList {
+/* .homeList {
   color: white;
+} */
+
+.homeList .green {
+  color: #53be85;
+}
+
+.homeList .red {
+  color: #e04659;
 }
 
 .adm-card {
-  color: white;
   background-color: #292c32;
 }
 
@@ -20,6 +27,12 @@ h2 {
   font-size: 1.65em;
 }
 
-.container-card p {
-  color: #888b95;
+.container-card .red {
+  padding-top: 5px;
+  color: #e04659;
+}
+
+.container-card .green {
+  padding-top: 5px;
+  color: #53be85;
 }
