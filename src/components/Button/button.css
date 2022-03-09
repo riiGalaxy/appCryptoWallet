@@ -1,0 +1,12 @@
+.buttonContainer {
+  z-index: 101;
+  position: sticky;
+  bottom: 55px;
+}
+
+.buttonBackground {
+  background-color: #fcd537;
+  color: #212833;
+  border: none;
+  border-radius: 8px;
+}

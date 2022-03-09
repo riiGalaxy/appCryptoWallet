@@ -1,0 +1,14 @@
+.topbar {
+  background: rgb(41 44 50);
+  color: #f0b931;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 101;
+  height: 50px;
+  border-bottom: solid 1px #565656;
+}
+
+h1 {
+  font-size: 1.5em;
+}

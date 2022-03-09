@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  --adm-color-primary: #fcd537 !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #181a20;
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.adm-list-body {
+  background-color: #292c32;
+  border: none;
+}
+/* 
+.adm-input-element {
+  color: rgb(234, 236, 239);
+} */
+.adm-input-element {
+  color: #fcd537;
+}
+
+.botonFormulario {
+  background-color: #fcd537;
+  color: #212833;
+  border: none;
+}
+
+.adm-list-default .adm-list-body {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+/* textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus { */ {
+  border: none;
+  -webkit-text-fill-color: #fcd537;
+  -webkit-box-shadow: 0 0 0px 1000px #292c32 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* PRESENTATIONAL STYLES */
+/* body {
+  background: #333;
+  color: #fff;
+  display: flex;
+  font-family: "Lato";
+  font-size: 2em;
+  justify-content: center;
+}
+
+form {
+  padding: 50px 0;
+  width: 50%;
+} */
+
+.adm-checkbox .adm-checkbox-icon {
+  color: #292c32;
+}
+
+.adm-input {
+  color: #fcd537 !important;
+}

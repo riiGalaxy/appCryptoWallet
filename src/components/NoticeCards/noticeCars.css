@@ -1,0 +1,17 @@
+.container-news-cards img {
+  height: 160px;
+  width: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  padding: 0;
+}
+
+.container-news-cards {
+  margin: 10px 5px;
+}
+
+.container-news-cards p {
+  color: #8b8b8c;
+}

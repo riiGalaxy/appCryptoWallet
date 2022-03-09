@@ -1,0 +1,19 @@
+.containerNews img {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.containerNews {
+  margin: 50px 0px 10px 0px;
+}
+
+.imagenSwipper img {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,16 @@
+.graphicsContainer {
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.graphicsContainer button {
+  background-color: #2b3139;
+  color: #848e9c;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+}

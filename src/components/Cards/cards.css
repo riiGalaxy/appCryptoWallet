@@ -1,0 +1,25 @@
+.container-card img {
+  width: 30px;
+  background-color: #292c32;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.homeList {
+  color: white;
+}
+
+.adm-card {
+  color: white;
+  background-color: #292c32;
+}
+
+h2 {
+  font-size: 1.65em;
+}
+
+.container-card p {
+  color: #888b95;
+}

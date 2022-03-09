@@ -1,0 +1,14 @@
+.HeaderName {
+  margin-top: 65px;
+}
+
+.HeaderName h3 {
+  color: red;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.HeaderName img {
+  height: 50px;
+  width: 50px;
+}

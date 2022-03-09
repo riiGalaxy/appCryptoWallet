@@ -1,0 +1,13 @@
+.buttonContainerLog {
+  z-index: 101;
+  position: sticky;
+  bottom: 55px;
+  margin-top: 10px;
+}
+
+.buttonBackgroundLog {
+  background-color: #f24b5d;
+  color: #212833;
+  border: none;
+  border-radius: 8px;
+}

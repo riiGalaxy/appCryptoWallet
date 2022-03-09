@@ -1,0 +1,34 @@
+.botonFormulario {
+  background-color: #fcd537;
+  color: #212833;
+  border: none;
+  border-radius: 8px;
+}
+
+.botonOculto {
+  background-color: #333333;
+  border: none;
+}
+
+.keyBoard {
+  background-color: #292c32;
+  color: #fcd537;
+  border-color: #181a20;
+}
+
+.adm-number-keyboard-header {
+  background-color: #292c32;
+  color: #fcd537;
+  border-top: solid 1px #60645a;
+  --adm-color-white: transparent;
+}
+
+.adm-number-keyboard-wrapper .number-key {
+  background-color: #292c32;
+  color: #fcd537;
+  border-color: #181a20;
+}
+
+.adm-number-keyboard-wrapper .sign-key {
+  border-color: #181a20;
+}

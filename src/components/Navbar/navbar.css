@@ -1,0 +1,12 @@
+.bottom {
+  position: fixed;
+  border-top: solid 1px #565656;
+  bottom: 0;
+  width: 100vw;
+  z-index: 101;
+  background: #292c32;
+}
+
+.adm-tab-bar-item-active {
+  color: #efe739;
+}

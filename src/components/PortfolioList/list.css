@@ -1,0 +1,33 @@
+.adm-swipe-action {
+  background-color: #181a20;
+}
+
+.containerList img {
+  width: 30px;
+  background-color: #181a20;
+  color: white;
+  transform: rotate(20deg);
+}
+
+.containerList {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.containerList p {
+  color: #5dcc7b;
+}
+
+.containerList a {
+  text-decoration: none;
+  color: rgb(234, 236, 239);
+}
+.adm-list {
+  border-top: none;
+  border-bottom: none;
+}
+
+.adm-list-item-content {
+  border: none;
+}
