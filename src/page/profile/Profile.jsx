@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import ProfileDetails from "../../components/ProfileDetails/ProfileDetails";
 import ResumeProfile from "../../components/ResumeProfile/ResumeProfile";
 import ButtonLogOut from "../../components/LogOut/LogOutButton";
+import Session from "../../components/Session/Session";
 
 import investmentServices from "../../services/investment.services.js";
 import { UserContext } from "../../context/user.context";
@@ -17,9 +18,9 @@ export const Profile = () => {
 
     changeStats(getInvestmentUser);
   }, []);
-
   return (
     <>
+      {!user && <Session />}
       {user && <ProfileDetails user={user} />}
       {stats && <ResumeProfile stats={stats} />}
       {user && <ButtonLogOut />}

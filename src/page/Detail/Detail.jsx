@@ -16,7 +16,6 @@ export const Details = () => {
 
   useEffect(async () => {
     const { data } = await apiServices.getIdCrypto(id);
-    console.log("esto es data", data);
 
     changeCoin(data);
   }, []);

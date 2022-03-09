@@ -8,9 +8,7 @@ const imgNoticeUrl2 =
   "https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2021/10/01/bitcoin-predicciones.png";
 
 const NewsCards = ({ news }) => {
-  console.log(news.Data);
   let cutNews = news.Data.slice(0, 10);
-  console.log(cutNews);
   return (
     <Grid columns={2} gap={10} className="homeList">
       {cutNews.map((value) => {

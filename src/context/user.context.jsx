@@ -11,7 +11,9 @@ function UserProviderWrapper(props) {
 
   const storeToken = (token) => {
     localStorage.setItem("userToken", token);
+    authenticateUser();
   };
+
   const getToken = () => {
     return localStorage.getItem("userToken");
   };
@@ -21,7 +23,6 @@ function UserProviderWrapper(props) {
 
   const authenticateUser = () => {
     const storedToken = getToken();
-    console.log("storedToken context", storedToken);
 
     if (!storedToken) {
       logOutUser();

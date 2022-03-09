@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ButtonInvestment from "../../components/Button/Button";
 import PortfolioList from "../../components/PortfolioList/List";
-
+import Session from "../../components/Session/Session";
 import "./portfolio.css";
 
 import investmentServices from "../../services/investment.services.js";
@@ -19,6 +19,7 @@ export const Portfolio = () => {
     <>
       <div>
         <div className="containerPortfolio">
+          {!investments && <Session />}
           {investments && <PortfolioList investments={investments} />}
           {investments && <ButtonInvestment />}
         </div>
