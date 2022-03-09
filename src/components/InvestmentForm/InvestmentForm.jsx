@@ -134,21 +134,22 @@ const InvestmentForm = () => {
           </Button>
         }
       >
-        <Form.Item name="coin" label="Coin name">
+        <Form.Item name="coin">
           <Button
             onClick={onVisibleCoinChange}
             block
             border="none"
             className="botonOculto"
-          ></Button>
-          <Picker
-            columns={basicColumns}
-            visible={coin.isVisible}
-            onClose={onVisibleCoinChange}
-            value={coin.name}
-            onConfirm={onCoinValueChange}
-          />
-          <Input placeholder="Coin name" value={coin.name} />
+          >
+            <Picker
+              columns={basicColumns}
+              visible={coin.isVisible}
+              onClose={onVisibleCoinChange}
+              value={coin.name}
+              onConfirm={onCoinValueChange}
+            />
+            <Input placeholder="Coin name" value={coin.name} />
+          </Button>
         </Form.Item>
 
         <List.Item onClick={onVisibleChangeKeyboard}>
@@ -165,6 +166,7 @@ const InvestmentForm = () => {
             value={keyBoardTwo.value}
             name="purchasePrice"
             readOnly
+            arrow={false}
           />
         </List.Item>
       </Form>

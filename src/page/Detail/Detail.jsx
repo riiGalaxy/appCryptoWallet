@@ -6,6 +6,8 @@ import ButtonsCoins from "../../components/GraphicDetailButton/GraphicDetailButt
 import GraphicsButton from "../../components/GraphicsButtons/GraphicsButton";
 import HeaderDetail from "../../components/HeaderDetails/HeaderDetail";
 
+import "./detail.css";
+
 import apiServices from "../../services/crypto.services";
 
 export const Details = () => {
@@ -25,12 +27,14 @@ export const Details = () => {
       {/* <GraphicsButton />
       <GraphicImage /> */}
       {coin && (
-        <AdvancedChart
-          widgetProps={{
-            theme: "dark",
-            symbol: `BINANCE:${coin.symbol}USDT`,
-          }}
-        />
+        <div className="graphicContainer">
+          <AdvancedChart
+            widgetProps={{
+              theme: "dark",
+              symbol: `BINANCE:${coin.symbol}USDT`,
+            }}
+          />
+        </div>
       )}
       <ButtonsCoins />
     </>

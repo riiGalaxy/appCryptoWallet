@@ -20,7 +20,7 @@ export const Portfolio = () => {
       <div>
         <div className="containerPortfolio">
           {investments && <PortfolioList investments={investments} />}
-          <ButtonInvestment />
+          {investments && <ButtonInvestment />}
         </div>
       </div>
     </>

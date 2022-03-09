@@ -6,7 +6,7 @@
 }
 
 .botonOculto {
-  background-color: #333333;
+  background-color: #292c32;
   border: none;
 }
 
@@ -31,4 +31,34 @@
 
 .adm-number-keyboard-wrapper .sign-key {
   border-color: #181a20;
+}
+
+.adm-input {
+  --placeholder-color: #fcd537;
+}
+
+.adm-list-item-content-arrow {
+  display: none;
+}
+
+.adm-picker {
+  color: #fcd537;
+  background-color: #181a20;
+}
+
+.adm-picker-view-column-item {
+  background-color: #292c32;
+  --adm-border-color: #181a20;
+}
+
+.adm-picker-header-button {
+  color: #181a20;
+}
+
+.adm-picker-view-column-wheel::before {
+  background-color: #181a20;
+}
+
+.adm-picker-view-column-wheel::after {
+  background-color: #181a20;
 }

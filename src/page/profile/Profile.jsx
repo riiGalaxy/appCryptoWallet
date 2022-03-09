@@ -22,7 +22,7 @@ export const Profile = () => {
     <>
       {user && <ProfileDetails user={user} />}
       {stats && <ResumeProfile stats={stats} />}
-      <ButtonLogOut />
+      {user && <ButtonLogOut />}
     </>
   );
 };
