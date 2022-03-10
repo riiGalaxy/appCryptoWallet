@@ -1,6 +1,7 @@
-.sessionContainer {
+.adm-grid.sessionContainer {
   padding: 0 10px;
   margin-top: 60px;
+  border: none;
 }
 
 .sessionContainer button {

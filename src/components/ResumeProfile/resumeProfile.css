@@ -14,6 +14,16 @@ a {
 
 .container-card-investment {
   margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.container-profit .green {
+  color: #53be85;
 }
 
 .container-card-investment h1 {
@@ -38,25 +48,17 @@ a {
 
 .container-profit h1 {
   color: rgb(234, 236, 239);
-
-  /* align-items: center; */
 }
 
 .container-profit {
   display: flex;
-
   align-items: flex-end;
-
   flex-direction: column;
 }
-/* .container-profit {
-  display: flex;
-  justify-content: start;
-  /* align-items: center; */
-
-/* .adm-card {
-  margin: 0px 5px;
-} */
+.container-profit {
+  padding: 0;
+  margin: 0 5px;
+}
 
 .parrafoStart .container-profit {
   display: flex;
@@ -67,6 +69,13 @@ a {
   color: #8c94a8;
 }
 
-.resume-profit-p p {
+.resume-profit-p {
   align-items: start;
+  display: flex !important;
+  text-justify: auto;
+}
+
+.adm-card .resume-profit-p div {
+  margin: 0 5px;
+  padding: 0;
 }

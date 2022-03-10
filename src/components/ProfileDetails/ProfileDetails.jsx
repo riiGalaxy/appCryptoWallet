@@ -14,7 +14,7 @@ const ProfileDetails = ({ user }) => {
           <h3>{user.username}</h3>
           <h4>{user.email}</h4>
         </Grid.Item>
-        <Grid.Item>
+        <Grid.Item className="imgProfile">
           <Image src={imgAvatar} width={100} height={100} fit="fill" />
         </Grid.Item>
       </Grid>

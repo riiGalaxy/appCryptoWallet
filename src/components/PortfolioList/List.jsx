@@ -13,7 +13,7 @@ const PortfolioList = ({ investments }) => {
     });
   };
   const deleteInvestment = () => {
-    navigate("/delete");
+    navigate("/portfolio");
   };
 
   return (

@@ -46,7 +46,7 @@ const ResumeProfile = ({ stats }) => {
 
   return (
     <>
-      <Card block>
+      <Card block style={{ margin: "0 5px" }}>
         <Grid columns={2} className="resume-profit">
           <div className="resume-profit-p">
             <div className="container-profit">
@@ -56,7 +56,7 @@ const ResumeProfile = ({ stats }) => {
           <div className="container-profit">
             <h1>{totalProfit}</h1>
             <br></br>
-            <h1>{totalProfitPercent}%</h1>
+            <h1 className="green">{totalProfitPercent}%</h1>
           </div>
         </Grid>
       </Card>

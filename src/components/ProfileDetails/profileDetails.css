@@ -11,3 +11,12 @@
   background-position: center;
   border-radius: 25px;
 }
+
+.imgProfile {
+  display: flex;
+  justify-content: center;
+}
+
+.imgProfile img {
+  border-radius: 50%;
+}
