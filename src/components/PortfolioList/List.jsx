@@ -18,6 +18,18 @@ const PortfolioList = ({ investments }) => {
 
   return (
     <List className="containerList">
+      <h1>Your Assets</h1>
+      <Grid columns={3}>
+        <List.Item>
+          <p>Asset</p>
+        </List.Item>
+        <List.Item>
+          <p className="lastTittle">Price</p>
+        </List.Item>
+        <List.Item>
+          <p className="lastTittle">Profit</p>
+        </List.Item>
+      </Grid>
       {investments.map((investment) => (
         <SwipeAction
           key={investment._id}
@@ -45,35 +57,41 @@ const PortfolioList = ({ investments }) => {
             },
           ]}
         >
-          <Grid columns={2}>
+          <Grid columns={3}>
             <List.Item>
+              {/* <Image
+                src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${investment.id}.png`}
+              /> */}
               {investment.coin}
-              <p>Purchase price: {investment.purchasePrice}</p>
-              <p>
-                Investment value:
-                {investment.quantity * investment.purchasePrice}
-              </p>
-              {/* <Image justify-content-center src={img} /> */}
             </List.Item>
-            <div style={{ padding: 12 }}>
-              <p>
-                Actual profit:
-                {(
-                  investment.quantity * investment.actualPrice -
-                  investment.quantity * investment.purchasePrice
-                ).toFixed(2)}{" "}
-                $
-              </p>
-              <p>
-                {(
-                  ((investment.quantity * investment.actualPrice -
-                    investment.quantity * investment.purchasePrice) *
-                    100) /
-                  (investment.quantity * investment.purchasePrice)
-                ).toFixed(2)}{" "}
-                %
-              </p>
-            </div>
+            <List.Item>
+              <h3 className="lastTittle">
+                {investment.actualPrice.toFixed(2)} $
+              </h3>
+            </List.Item>
+            <List.Item>
+              <div className="lastColumn">
+                <h3
+                  className={
+                    investment.quantity * investment.actualPrice -
+                      investment.quantity * investment.purchasePrice >
+                    0
+                      ? "green"
+                      : "red"
+                  }
+                >
+                  {(
+                    investment.quantity * investment.actualPrice -
+                    investment.quantity * investment.purchasePrice
+                  ).toFixed(2)}{" "}
+                  $
+                </h3>
+                <p>
+                  {investment.quantity}
+                  {investment.coin.slice(0, 3)}
+                </p>
+              </div>
+            </List.Item>
           </Grid>
         </SwipeAction>
       ))}
@@ -82,3 +100,18 @@ const PortfolioList = ({ investments }) => {
 };
 
 export default PortfolioList;
+
+//// Actual profit en %
+//  <p>
+//    {(
+//      ((investment.quantity * investment.actualPrice -
+//        investment.quantity * investment.purchasePrice) *
+//        100) /
+//      (investment.quantity * investment.purchasePrice)
+//    ).toFixed(2)}{" "}
+//    %
+//  </p>;
+
+{
+  /* <div style={{ padding: 12 }}></div> */
+}

@@ -16,7 +16,7 @@
 }
 
 .containerList p {
-  color: #5dcc7b;
+  color: #88889f;
 }
 
 .containerList a {
@@ -27,7 +27,63 @@
   border-top: none;
   border-bottom: none;
 }
-
+.adm-list-item {
+  padding: 0px;
+}
 .adm-list-item-content {
   border: none;
+}
+.adm-list-item-content-main {
+  text-align: start;
+}
+.adm-list-body-inner {
+  background-color: #181a20;
+}
+
+.adm-list-body-inner h1 {
+  text-align: start;
+  padding-top: 12px;
+}
+
+.adm-grid {
+  border-bottom: 1px solid #2b2a30;
+}
+
+.adm-list-item-content-main {
+  text-align: start;
+  align-items: center;
+  padding: 25px 0 5px 0;
+}
+
+/* .adm-list-item-content-main:first-child {
+  flex: inherit;
+} */
+/* 
+.lastColumn .adm-list-item {
+  flex: auto;
+  justify-content: right;
+} */
+
+.adm-list-item-content-main .lastColumn {
+  text-align: end;
+  align-items: center;
+}
+
+/* .adm-list-item-content-main .lastColumn div {
+  text-align: end;
+} */
+
+.lastTittle {
+  text-align: end !important;
+  align-items: center;
+}
+
+/* .adm-list-item-content-main .containerList; */
+
+.green {
+  color: #53be85;
+}
+
+.red {
+  color: #e04659;
 }

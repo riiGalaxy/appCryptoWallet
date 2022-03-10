@@ -8,7 +8,7 @@ const ButtonInvestment = () => {
     <div className="buttonContainer">
       <Link textDecoration="none" to="/create" size="large">
         <Button block size="large" className="buttonBackground">
-          Add investment
+          Add New Asset
         </Button>
       </Link>
     </div>
