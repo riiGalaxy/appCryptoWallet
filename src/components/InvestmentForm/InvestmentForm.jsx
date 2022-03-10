@@ -130,7 +130,7 @@ const InvestmentForm = () => {
             size="large"
             className="botonFormulario"
           >
-            Add investment
+            Add New Asset
           </Button>
         }
       >
@@ -147,12 +147,15 @@ const InvestmentForm = () => {
               onClose={onVisibleCoinChange}
               value={coin.name}
               onConfirm={onCoinValueChange}
+              confirmText="Ok"
+              cancelText="X"
+              className="editPicker"
             />
             <Input placeholder="Coin name" value={coin.name} />
           </Button>
         </Form.Item>
 
-        <List.Item onClick={onVisibleChangeKeyboard}>
+        <List.Item className="investmentForm" onClick={onVisibleChangeKeyboard}>
           <Input
             placeholder="Quantity"
             value={keyBoard.value}
@@ -160,7 +163,10 @@ const InvestmentForm = () => {
           />
         </List.Item>
 
-        <List.Item onClick={onVisibleChangeKeyboard2}>
+        <List.Item
+          // className="investmentForm"
+          onClick={onVisibleChangeKeyboard2}
+        >
           <Input
             placeholder="Purchase price"
             value={keyBoardTwo.value}

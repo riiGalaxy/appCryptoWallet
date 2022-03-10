@@ -32,7 +32,7 @@ const EditInvestmentForm = () => {
             size="large"
             className="botonFormulario"
           >
-            Edit investment
+            Edit Asset
           </Button>
         }
       >

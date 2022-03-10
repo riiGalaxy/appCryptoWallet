@@ -6,8 +6,9 @@
 }
 
 .botonOculto {
-  background-color: #292c32;
+  background-color: #181a20;
   border: none;
+  padding: 0px;
 }
 
 .keyBoard {
@@ -44,6 +45,7 @@
 .adm-picker {
   color: #fcd537;
   background-color: #181a20;
+  z-index: 4;
 }
 
 .adm-picker-view-column-item {
@@ -52,7 +54,7 @@
 }
 
 .adm-picker-header-button {
-  color: #181a20;
+  color: #fcd537;
 }
 
 .adm-picker-view-column-wheel::before {
@@ -62,3 +64,13 @@
 .adm-picker-view-column-wheel::after {
   background-color: #181a20;
 }
+
+/* .adm-popup-body .editPicker div {
+  background: #292c3280 !important;
+  z-index: -1;
+}
+
+.adm-picker-header-title div {
+  background-color: white;
+  padding: 0;
+} */

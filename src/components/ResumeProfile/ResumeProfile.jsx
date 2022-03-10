@@ -47,7 +47,20 @@ const ResumeProfile = ({ stats }) => {
   return (
     <Grid columns={2} gap={10}>
       <Link to={"/portfolio"}>
-        <p>Total amount invested ($)</p>
+        <p>Number Of Assets</p>
+        <Card block>
+          <Grid className="homeList" columns={1} gap={15}>
+            <div className="container-card-investment">
+              <Space wrap>
+                <h1>{stats.data.length}</h1>
+              </Space>
+            </div>
+          </Grid>
+        </Card>
+      </Link>
+
+      <Link to={"/portfolio"}>
+        <p>Amount Invested ($)</p>
         <Card block>
           <Grid className="homeList" columns={1} gap={15}>
             <div className="container-card-investment">
@@ -60,26 +73,13 @@ const ResumeProfile = ({ stats }) => {
       </Link>
 
       <Link to={"/portfolio"}>
-        <p>Total profit/loss ($)</p>
+        <p>Total Profit/Loss ($)</p>
         <Card block>
           <Grid className="homeList" columns={2} gap={15}>
             <div className="container-card">
               <div>
                 <h1>{totalProfit}</h1>
               </div>
-            </div>
-          </Grid>
-        </Card>
-      </Link>
-
-      <Link to={"/portfolio"}>
-        <p>Total number of investments</p>
-        <Card block>
-          <Grid className="homeList" columns={1} gap={15}>
-            <div className="container-card-investment">
-              <Space wrap>
-                <h1>{stats.data.length}</h1>
-              </Space>
             </div>
           </Grid>
         </Card>
