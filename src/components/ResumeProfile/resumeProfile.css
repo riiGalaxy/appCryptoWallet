@@ -2,7 +2,9 @@ a {
   text-decoration: none;
   color: rgb(234, 236, 239);
 }
-
+.buttonContainerLog {
+  margin: 0px 5px;
+}
 .container-card-investment img {
   width: 30px;
   background-color: #292c32;
@@ -16,4 +18,55 @@ a {
 
 .container-card-investment h1 {
   font-size: 1.5em;
+}
+
+.adm-grid {
+  margin: 0px 5px;
+}
+
+.container-profit {
+  color: rgb(234, 236, 239);
+}
+
+.container-profit p {
+  display: flex;
+  color: #8c94a8;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-profit h1 {
+  color: rgb(234, 236, 239);
+
+  /* align-items: center; */
+}
+
+.container-profit {
+  display: flex;
+
+  align-items: flex-end;
+
+  flex-direction: column;
+}
+/* .container-profit {
+  display: flex;
+  justify-content: start;
+  /* align-items: center; */
+
+/* .adm-card {
+  margin: 0px 5px;
+} */
+
+.parrafoStart .container-profit {
+  display: flex;
+  align-items: start;
+}
+
+.gridParrafo p {
+  color: #8c94a8;
+}
+
+.resume-profit-p p {
+  align-items: start;
 }
