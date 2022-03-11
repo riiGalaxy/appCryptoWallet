@@ -29,8 +29,6 @@ class Investment {
   };
 
   deleteInvestment = async (data) => {
-    console.log("app----borrandoooooo", data);
-
     return this.investment.delete(`/portfolio/investment/${data}`);
   };
 }
