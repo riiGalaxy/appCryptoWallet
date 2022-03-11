@@ -1,19 +1,15 @@
 import React from "react";
 import { List, SwipeAction, Grid, Image } from "antd-mobile";
 import { useNavigate } from "react-router-dom";
-
 import "./list.css";
 
-const PortfolioList = ({ investments }) => {
+const PortfolioList = ({ investments, deleteInvestment }) => {
   const navigate = useNavigate();
 
   const editInvestment = ({ id, coin, quantity, purchasePrice }) => {
     navigate(`/edit/${id}`, {
       state: { id, coin, quantity, purchasePrice },
     });
-  };
-  const deleteInvestment = () => {
-    navigate("/portfolio");
   };
 
   return (

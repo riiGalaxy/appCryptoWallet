@@ -27,6 +27,12 @@ class Investment {
   editInvestmentId = async (data) => {
     return this.investment.put(`/portfolio/investment/${data.id}`, data);
   };
+
+  deleteInvestment = async (data) => {
+    console.log("app----borrandoooooo", data);
+
+    return this.investment.delete(`/portfolio/investment/${data}`);
+  };
 }
 
 const investmentServices = new Investment();
